@@ -892,7 +892,7 @@ runs:
 
     - name: Add KernelSU Next
       shell: bash
-      if: ${{ inputs.ksu_type == 'KSUN' }}
+      if: ${{ false }}
       run: |
         set -euo pipefail
         echo "::group::Add KernelSU Next"
