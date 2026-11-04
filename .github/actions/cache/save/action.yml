@@ -45,6 +45,7 @@ runs:
         GH_TOKEN: ${{ inputs.github_token }}
         TARGET_REPO: "${{ github.repository }}"
       run: |
+        echo "cache upload disabled in fork"; exit 0
         # Archive, Split, and Upload Cache
         if [ "${{ inputs.debug }}" = "true" ]; then set -x; fi
         
